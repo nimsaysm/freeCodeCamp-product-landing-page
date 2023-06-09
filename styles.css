@@ -316,112 +316,25 @@ footer a {
 
 
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 648px){
+
     body {
         font-size: 1.6rem;
     }
 
     #content, #Delivery, #Our-Product {
-        padding: 2rem 7rem 7rem 7rem; /*superior, direita, inferior e esquerda */
+        padding: 2rem 5rem 7rem 5rem; /*superior, direita, inferior e esquerda */
     }
 
     #About-us, #Footer {
-        padding-left: 7rem;
-        padding-right: 7rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 
 
     h2 {
         font-size: 2.5rem;
-        width: 40rem;
-    }
-
-    h3 {
-        width: 40rem;
-        font-size: 2rem;
-    }
-
-    h4 {
-        font-size: 1.8rem;
-    }
-
-    #header-img {
-        width: 13rem;
-    }
-
-    #nav-bar {
-        font-size: 1.5rem;
-    }
-
-    .input-box, #submit {
-        font-size: 1.4rem;
-    }
-
-    #form label input {
-        width: 100%;
-    }
-
-    #content-text h1 {
-        font-size: 3.5rem;
-        width:40rem;
-    }
-
-    #content p {
-        width:35rem;
-        font-size: 1.4rem;
-    }
-
-    #view-menu button {
-        font-size: 1.2rem;
-        width: 10rem;
-        padding:1rem;
-    }
-
-    #About-us img {
-        width: 40%;
-        margin-right: 2rem;
-    }
-
-    #About-us p {
-        width: 37rem;
-    }
-
-    #products-list {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .product {
-        width: 28rem;
-        height: 34rem;
-    }
-
-    .product-img {
-        width: 27rem;
-    }
-
-    footer {
-        font-size: 1.4rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 1.6rem;
-    }
-
-    #content, #Delivery, #Our-Product {
-        padding: 2rem; /*superior, direita, inferior e esquerda */
-    }
-
-    #About-us, #Footer {
-        padding-left: 7rem;
-        padding-right: 7rem;
-    }
-
-
-    h2 {
-        font-size: 2.5rem;
-        width: 40rem;
+        width: 35rem;
     }
 
     h3 {
@@ -431,12 +344,15 @@ footer a {
 
     h4 {
         font-size: 1.8rem;
+        width: 16rem;
     }
 
     #header {
-        padding: 2rem;
+        padding: 2rem 5rem 2rem 5rem;
     }
-
+    #header-img {
+        width: 13rem;
+    }
 
     #nav-bar {
         font-size: 1.5rem;
@@ -466,9 +382,128 @@ footer a {
         padding:1rem;
     }
 
+    #About-us {
+        padding: 2rem 5rem 2rem 5rem;
+        align-items: center;
+    }
+
     #About-us img {
+        width: 35%;
+        margin-right: 2rem;
+    }
+
+    #About-us p {
+        width:35rem;
+        font-size: 1.4rem;
+    }
+
+    #products-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product {
+        width: 22rem;
+        height: 28rem;
+    }
+
+    .product-img {
+        width: 21rem;
+    }
+
+    footer {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    * {
+        max-width: 320px;
+    }
+    
+    body {
+        font-size: 1.6rem;
+    }
+
+    #content, #Delivery, #Our-Product {
+        padding: 2rem; /*superior, direita, inferior e esquerda */
+    }
+
+    #About-us, #Footer {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        width: 35rem;
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    #header {
+        padding: 1rem;
+        height: 8rem;
+        align-items: center;
+    }
+
+    #header-img {
         width: 40%;
-        padding: 2rem;
+    }
+
+    #cart-icon {
+        width: 10%;
+    }
+
+    #nav-bar {
+        font-size: 1.3rem;
+    }
+    
+
+    #nav-bar ul {
+        display: block;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .input-box, #submit {
+        font-size: 1.4rem;
+    }
+
+    #form label input {
+        width: 20rem;
+    }
+
+    #content-text h1 {
+        font-size: 2.7rem;
+        width:30rem;
+    }
+
+    #content p {
+        width:27rem;
+        font-size: 1.4rem;
+    }
+
+    video {
+        width: 90%;
+    }
+
+    #view-menu button {
+        font-size: 1.2rem;
+        width: 10rem;
+        padding:1rem;
+    }
+
+    #About-us {
+        display: flex;
+        flex-direction: column;
     }
 
     #About-us p {
@@ -476,23 +511,30 @@ footer a {
         font-size: 1.4rem;
     }
 
+    #About-us img, video {
+        display: none;
+    }
+
+
     #products-list {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
     .product {
-        width: 24rem;
-        height: 30rem;
+        width: 20rem;
+        height: 28rem;
     }
 
     .product-img {
-        width: 23rem;
+        width: 19rem;
+    }
+    
+    .product-description {
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
 
-    .product-description {
-        font-size: 1.4rem;
-    }
     
     footer {
         font-size: 1.2rem;
