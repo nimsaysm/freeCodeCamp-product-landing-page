@@ -403,3 +403,99 @@ footer a {
         font-size: 1.4rem;
     }
 }
+
+@media only screen and (max-width: 640px){
+    body {
+        font-size: 1.6rem;
+    }
+
+    #content, #Delivery, #Our-Product {
+        padding: 2rem; /*superior, direita, inferior e esquerda */
+    }
+
+    #About-us, #Footer {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+
+    h2 {
+        font-size: 2.5rem;
+        width: 40rem;
+    }
+
+    h3 {
+        width: 35rem;
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    #header {
+        padding: 2rem;
+    }
+
+
+    #nav-bar {
+        font-size: 1.5rem;
+    }
+
+    .input-box, #submit {
+        font-size: 1.4rem;
+    }
+
+    #form label input {
+        width: 20rem;
+    }
+
+    #content-text h1 {
+        font-size: 3.5rem;
+        width:30rem;
+    }
+
+    #content p {
+        width:25rem;
+        font-size: 1.4rem;
+    }
+
+    #view-menu button {
+        font-size: 1.2rem;
+        width: 10rem;
+        padding:1rem;
+    }
+
+    #About-us img {
+        width: 40%;
+        padding: 2rem;
+    }
+
+    #About-us p {
+        width: 35rem;
+        font-size: 1.4rem;
+    }
+
+    #products-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .product {
+        width: 24rem;
+        height: 30rem;
+    }
+
+    .product-img {
+        width: 23rem;
+    }
+
+    .product-description {
+        font-size: 1.4rem;
+    }
+    
+    footer {
+        font-size: 1.2rem;
+    }
+
+}
