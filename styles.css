@@ -316,7 +316,7 @@ footer a {
 
 
 
-@media only screen and (max-width: 770px){
+@media screen and (max-width: 770px){
     body {
         font-size: 1.6rem;
     }
@@ -404,7 +404,7 @@ footer a {
     }
 }
 
-@media only screen and (max-width: 640px) and (min-width: 480px){
+@media screen and (max-width: 480px) {
     body {
         font-size: 1.6rem;
     }
