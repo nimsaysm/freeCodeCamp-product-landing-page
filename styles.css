@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-areas:
+        "form"
+        "content"
+        "delivery"
+        "about-us"
+        "menu"
+        "footer";
+}
+
+h2 {
+    font-size: 3.2rem;
+    width: 50rem;
+    padding: 2rem;
+    color: #2F2105;
+}
+
+h3 {
+    width: 50rem;
+    font-size: 2.4rem;
+    color: #2F2105;
+    padding: 2rem;
+}
+
+
+h4 {
+    font-size: 2.4rem;
+    color: #2F2105;
+}
+
+p {
+    width: 50rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: lighter;
+    color: #2F2105;
+    margin-bottom: 2rem;
+}
+
+
+#content, #form {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.692), rgba(255, 255, 255, 0.692)), url("assets/bg-image.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#content, #Delivery, #Our-Product {
+    padding: 3.5rem 10rem 7rem 10rem; /*superior, direita, inferior e esquerda */
+}
+
+
+#header {
+    width: 100%;
+    height: 7rem;
+    padding: 2rem 10rem 2rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: #F7EBDA;
+    z-index: 9999;
+}
+
+#header-img {
+    width: 15rem;
+    height: 3rem;
+}
+
+#nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-bar li {
+    display: inline-block;
+
+}
+
+#nav-bar ul li a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #2F2105;
+}
+
+#nav-bar ul li a:hover {
+    color: #FF902B;
+
+}
+
+#cart-icon:hover {
+    cursor: pointer;
+}
+
+#form {
+    margin-top: 7rem;
+    display: flex;
+    grid-area: form;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 10rem 5rem 10rem; /*superior, direita, inferior e esquerda */
+}
+
+#form fieldset {
+    border: 0;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 40%;
+    height: 100%;
+}
+
+#form label input{
+    font-family: 'Poppins';
+    width: 40%;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 0.1rem solid #2F2105;
+    border-radius: 0.5rem;
+}
+
+#submit {
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    padding: 0.3rem;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #FF902B;
+    color: white;
+    filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16));
+    font-weight: lighter;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+
+#content {
+    grid-area: content;
+    height: 45rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content-text h1 {
+    color: #2F2105;
+    font-size: 4.8rem;
+    width: 50rem;
+    margin-bottom: 2rem;
+}
+
+#content-text span {
+    color: #FF902B;
+}
+
+
+
+#view-menu {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#view-menu button{
+    width: 15rem;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    background-color: #2F2105;
+    border: 0;
+    filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16));
+    color: white;
+    font-weight: 700;
+    border-radius: 3rem;
+}
+
+video {
+    width: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+    filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16));
+}
+
+#Delivery {
+    grid-area: delivery;
+}
+
+#Delivery img, #about-img img {
+    width: 100%;
+    justify-content: center;
+}
+
+#About-us {
+    grid-area: about-us;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3.5rem 20rem 3.5rem 20rem; 
+    width: 100%;
+    background-image: url(assets/bg-image-about-us.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+#about-img img {
+    filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16));
+}
+
+#about-us-content {
+    justify-items: center;
+}
+
+#about-us-content p {
+    padding: 2rem;
+}
+
+#Our-Product {
+    grid-area: menu;
+    align-items: center;
+    justify-content: center;
+}
+
+#products-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.product {
+    width: 32rem;
+    height: 38rem;
+    background-color: white;
+    border: 0.5rem solid white;
+    filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16));
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-areas: 
+    "img img"
+    "title ."
+    "description cart";
+}
+
+.product-img {
+    grid-area: img;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    width: 31rem;
+}
+
+.product-name {
+    grid-area: title;
+    padding: 0.5rem;
+}
+
+.product p {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    color: #7E7D7A;
+    grid-area: description;
+    width: 90%;
+}
+
+.product button {
+    grid-area: cart;
+    border: 0;
+    border-radius: 100%;
+    justify-self:end;
+    background-color: transparent;
+    margin-right: 1rem;
+}
+
+.product button:hover {
+    cursor: pointer;
+}
+
+
+footer {
+    padding: 1rem;
+    height: 100%;
+    font-size: 1.6rem;
+    grid-area: footer;
+    background-color: #1c1403;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+
+
+
+
+@media only screen and (max-width: 770px){
+    body {
+        font-size: 1.6rem;
+    }
+
+    #content, #Delivery, #Our-Product {
+        padding: 2rem 7rem 7rem 7rem; /*superior, direita, inferior e esquerda */
+    }
+
+    #About-us, #Footer {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+
+    h2 {
+        font-size: 2.5rem;
+        width: 40rem;
+    }
+
+    h3 {
+        width: 40rem;
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    #header-img {
+        width: 13rem;
+    }
+
+    #nav-bar {
+        font-size: 1.5rem;
+    }
+
+    .input-box, #submit {
+        font-size: 1.4rem;
+    }
+
+    #form label input {
+        width: 100%;
+    }
+
+    #content-text h1 {
+        font-size: 3.5rem;
+        width:40rem;
+    }
+
+    #content p {
+        width:35rem;
+        font-size: 1.4rem;
+    }
+
+    #view-menu button {
+        font-size: 1.2rem;
+        width: 10rem;
+        padding:1rem;
+    }
+
+    #About-us img {
+        width: 40%;
+        margin-right: 2rem;
+    }
+
+    #About-us p {
+        width: 37rem;
+    }
+
+    #products-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product {
+        width: 28rem;
+        height: 34rem;
+    }
+
+    .product-img {
+        width: 27rem;
+    }
+
+    footer {
+        font-size: 1.4rem;
+    }
+}

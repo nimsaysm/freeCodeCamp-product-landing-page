@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="icon" type="image/png" href="/assets/logo.svg" />
+
+    
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,400;0,700;1,500&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <img id="header-img" src="/assets/logo_coffe.svg">
+
+        <nav id="nav-bar">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#About-us">About us</a>
+                </li>
+                
+                <li>
+                    <a class="nav-link" href="#Our-Product">Our Product</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#Delivery">Delivery</a>
+                </li>
+            </ul>
+        </nav>
+        <img id="cart-icon" src="assets/icons_cart.svg">
+
+    </header>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <fieldset>
+            <div class="input-box">
+                <label for="email">
+                    <input id="email" type="email" name="email" pattern="(^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)" placeholder="Enter your e-mail address" />
+                </label>
+            </div>
+            
+            <input id="submit" class="btn" type="submit" value="Get Started">
+            
+        </fieldset>
+    </form>
+            
+    <main>
+        <div id="content">
+            <div id="content-text">
+                <h1>Enjoy your <span>coffee</span> before your activity</h1>
+                <p>Boost your productivity and build your 
+                mood with a glass of coffee in the morning </p>
+                    <a id="view-menu" href="#Our-Product">
+                        <button>View menu</button>
+                    </a>
+            </div>
+            <div id="video-container">
+                <video  src="/assets/coffee.mp4" id="video" width="320" height="240" loop autoplay muted></video>
+            </div>
+        </div>
+    </main>
+    
+    <div id="Delivery">
+        <h2>How to use delivery service</h2>
+        <img id="delivery-img" src="assets/delivery.png">
+    </div>
+    
+    <div id="About-us">
+        <img id="about-img" src="assets/coffee1.png">
+
+        <div id="about-us-content">
+            <h2>About us</h2>
+            <h3>We provide quality coffee, and ready to deliver.</h3>
+            <p>We are a company that makes and distributes 
+                delicious drinks. our main product is made with a 
+                secret recipe and available in stores worldwide.</p>
+        </div>
+    </div>
+    
+    <div id="Our-Product"> 
+        <h2>Special menu for you</h2>
+        <div id="products-list">
+            <div class="product">
+                <img class="product-img" src="assets/sandwich.png">
+                <h4 class="product-name">Sandwich</h4>
+                <p class="product-description">Bread with meat and vegetables</p>
+                <button>
+                    <img class="cart-product" src="assets/product-cart.svg">
+                </button>
+            </div>
+
+            <div class="product">
+                <img class="product-img" src="assets/hot-milk.png">
+                <h4 class="product-name">Hot Milk</h4>
+                <p class="product-description">Hot Milk with less sugar</p>
+                <button>
+                    <img class="cart-product" src="assets/product-cart.svg">
+                </button>
+            </div>
+
+            <div class="product">
+                <img class="product-img" src="assets/coffee-ice-cream.png">
+                <h4 class="product-name">Coffe Ice Cream</h4>
+                <p class="product-description">Coffe with ice cream vanilla</p>
+                <button>
+                    <img class="cart-product" src="assets/product-cart.svg">
+                </button>
+            </div>
+
+            <div class="product">
+                <img class="product-img" src="assets/cappucino.png">
+                <h4 class="product-name">Cappucino</h4>
+                <p class="product-description">Hot Capuccino</p>
+                <button>
+                    <img class="cart-product" src="assets/product-cart.svg">
+                </button>
+            </div>
+
+            <div class="product">
+                <img class="product-img" src="assets/moccacino.png">
+                <h4 class="product-name">Moccacino</h4>
+                <p class="product-description">Hot Moccacino</p>
+                <button>
+                    <img class="cart-product" src="assets/product-cart.svg">
+                </button>
+            </div>
+
+            <div class="product">
+                <img class="product-img" src="assets/waffle-ice-cream.png">
+                <h4 class="product-name">Waffle Ice Cream</h4>
+                <p class="product-description">Waffle with Ice cream</p>
+                <button>
+                    <img class="cart-product" src="assets/product-cart.svg">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Made with 🤍 by <a href="https://www.linkedin.com/in/yasmin-soraya/">Yasmin Soraya</a>.<br/>
+        You can check the original template <a href="https://www.figma.com/community/file/1138256358581554095">here</a>.
+    </footer>
+    
+</body>
+</html>
