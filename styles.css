@@ -320,8 +320,9 @@ footer a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     body {
+        max-width: 480px;
         font-size: 1.6rem;
     }
 
@@ -384,13 +385,13 @@ footer a {
 
     #content {
         display: block;
-        justify-content: center;
+        justify-items: center;
+        text-align: center;
         align-items: center;
         height: 100%;
     }
     
     #content h1 {
-        text-align: center;
         width: 100%;
         font-size: 3rem;
     }
@@ -423,7 +424,7 @@ footer a {
 
     #products-list {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
 
     .product {
@@ -445,7 +446,7 @@ footer a {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     body {
         font-size: 1.6rem;
     }
@@ -561,5 +562,131 @@ footer a {
 
     footer {
         font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        max-width: 480px;
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        padding: auto;
+        padding-bottom: 0;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+
+    p {
+        width: 100%;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    #content, #Delivery, #Our-Product, #form, #About-us {
+        padding: 2rem 3rem 7rem 3rem; /*superior, direita, inferior e esquerda */
+    }
+
+    #header {
+        padding: 1rem 3rem 1rem 3rem;
+        height: 8rem;
+        align-items: center;
+    }
+
+    #header-img {
+        width: 30%;
+    }
+
+    #cart-icon {
+        width: 10%;
+        max-width: 3rem;
+    }
+
+    #nav-bar ul li {
+        display: flex;
+        font-size: 1.2rem;
+    }
+
+    #nav-bar ul li a {
+        padding: 0;
+    }
+
+    #form label input {
+        width: 20rem;
+    }
+
+    #content {
+        display: block;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    #content h1 {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    #content p {
+        text-align: center;
+        width: 100%;
+    }
+
+    #view-menu button {
+        width: 13rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+    #delivery-images {
+        display: block;
+    }
+
+    #About-us {
+        padding: 2rem 5rem 7rem 5rem;
+    }
+
+    #About-us img {
+        display: none;
+    }
+
+    #products-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .product {
+        width: 26rem;
+        height: 32rem;
+    }
+
+    .product-img {
+        width: 25rem;
+    }
+
+    .product p {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    footer {
+        font-size: 1.3rem;
     }
 }
