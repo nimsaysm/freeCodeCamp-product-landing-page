@@ -75,10 +75,6 @@ p {
     z-index: 9999;
 }
 
-#header-img {
-    width: 15rem;
-    height: 3rem;
-}
 
 #nav-bar ul {
     list-style-type: none;
@@ -120,7 +116,7 @@ p {
     border: 0;
     border-radius: 1rem;
     padding: 1rem;
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 
@@ -136,7 +132,7 @@ p {
 
 #submit {
     font-family: 'Poppins';
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding: 0.3rem;
     border: 0;
     padding: 0.5rem;
@@ -203,9 +199,17 @@ video {
     grid-area: delivery;
 }
 
-#Delivery img, #about-img img {
+
+
+#delivery-images {
+    display: flex;
+    width: 100%;
+}
+
+.delivery-img {
     width: 100%;
     justify-content: center;
+
 }
 
 #About-us {
@@ -222,8 +226,11 @@ video {
 
 }
 
+
 #about-img img {
     filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16));
+    width: 100%;
+    justify-content: center;
 }
 
 #about-us-content {
@@ -313,231 +320,246 @@ footer a {
     text-decoration: none;
 }
 
-
-
-
-@media screen and (min-width: 648px){
-
+@media screen and (max-width: 480px) {
     body {
         font-size: 1.6rem;
     }
 
-    #content, #Delivery, #Our-Product {
-        padding: 2rem 5rem 7rem 5rem; /*superior, direita, inferior e esquerda */
-    }
-
-    #About-us, #Footer {
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-
-
     h2 {
         font-size: 2.5rem;
-        width: 35rem;
+        width: 100%;
+        text-align: center;
     }
 
     h3 {
-        width: 35rem;
         font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        padding: auto;
+        padding-bottom: 0;
     }
 
     h4 {
         font-size: 1.8rem;
-        width: 16rem;
+        width: 100%;
+    }
+
+    p {
+        width: 100%;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    #content, #Delivery, #Our-Product, #form, #About-us {
+        padding: 2rem 3rem 7rem 3rem; /*superior, direita, inferior e esquerda */
     }
 
     #header {
-        padding: 2rem 5rem 2rem 5rem;
+        padding: 1rem 3rem 1rem 3rem;
+        height: 8rem;
+        align-items: center;
     }
+
     #header-img {
-        width: 13rem;
+        width: 30%;
     }
 
-    #nav-bar {
-        font-size: 1.5rem;
+    #cart-icon {
+        width: 10%;
+        max-width: 3rem;
     }
 
-    .input-box, #submit {
-        font-size: 1.4rem;
+    #nav-bar ul li {
+        display: flex;
+        font-size: 1.2rem;
+    }
+
+    #nav-bar ul li a {
+        padding: 0;
     }
 
     #form label input {
         width: 20rem;
     }
 
-    #content-text h1 {
-        font-size: 3.5rem;
-        width:30rem;
+    #content {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    #content h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
     }
 
     #content p {
-        width:25rem;
-        font-size: 1.4rem;
+        text-align: center;
+        width: 100%;
     }
 
     #view-menu button {
-        font-size: 1.2rem;
-        width: 10rem;
-        padding:1rem;
+        width: 13rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+    #delivery-images {
+        display: block;
     }
 
     #About-us {
-        padding: 2rem 5rem 2rem 5rem;
-        align-items: center;
+        padding: 2rem 5rem 7rem 5rem;
     }
 
     #About-us img {
-        width: 35%;
-        margin-right: 2rem;
-    }
-
-    #About-us p {
-        width:35rem;
-        font-size: 1.4rem;
+        display: none;
     }
 
     #products-list {
-        grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .product {
-        width: 22rem;
-        height: 28rem;
+        width: 26rem;
+        height: 32rem;
     }
 
     .product-img {
-        width: 21rem;
+        width: 25rem;
+    }
+
+    .product p {
+        font-size: 1.3rem;
+        text-align: left;
     }
 
     footer {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 
-@media screen and (min-width: 320px) {
-    * {
-        max-width: 320px;
-    }
-    
+@media screen and (max-width: 768px) {
     body {
         font-size: 1.6rem;
     }
 
-    #content, #Delivery, #Our-Product {
-        padding: 2rem; /*superior, direita, inferior e esquerda */
-    }
-
-    #About-us, #Footer {
-        padding-left: 7rem;
-        padding-right: 7rem;
-    }
-
-
     h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        width: 100%;
     }
 
     h3 {
-        width: 35rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
+        width: 100%;
+        padding: auto;
+        padding-bottom: 0;
     }
 
     h4 {
-        font-size: 1.8rem;
+        font-size: 2.3rem;
+        width: 100%;
+    }
+
+    p {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    #content, #Delivery, #Our-Product, #form, #About-us {
+        padding: 2rem 5rem 7rem 5rem; /*superior, direita, inferior e esquerda */
     }
 
     #header {
-        padding: 1rem;
-        height: 8rem;
-        align-items: center;
+        padding: 2rem 5rem 2rem 5rem;
+        height: 7rem;
+        justify-content: space-between;
+        display: flex;
     }
 
     #header-img {
-        width: 40%;
+        width: 20%;
     }
 
     #cart-icon {
         width: 10%;
     }
 
-    #nav-bar {
-        font-size: 1.3rem;
-    }
-    
-
     #nav-bar ul {
-        display: block;
         justify-items: center;
-        align-content: center;
-        text-align: center;
+        align-items: center;
     }
 
-    .input-box, #submit {
-        font-size: 1.4rem;
+    #nav-bar ul li {
+        font-size: 1.6rem;
     }
+
 
     #form label input {
         width: 20rem;
     }
 
-    #content-text h1 {
-        font-size: 2.7rem;
-        width:30rem;
+    #content {
+        height: 100%;
+    }
+    
+    #content h1 {
+        width: 40rem;
+        font-size: 3.5rem;
     }
 
     #content p {
-        width:27rem;
-        font-size: 1.4rem;
-    }
-
-    video {
-        width: 90%;
+        width: 35rem;
     }
 
     #view-menu button {
-        font-size: 1.2rem;
-        width: 10rem;
-        padding:1rem;
+        width: 13rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+
+    #delivery-images {
+        margin: auto;
+        display: block;
+        max-width: 40rem;
     }
 
     #About-us {
-        display: flex;
-        flex-direction: column;
+        padding: 2rem 5rem 7rem 5rem;
     }
 
-    #About-us p {
-        width: 35rem;
-        font-size: 1.4rem;
+    #About-us img {
+        max-width: 20rem;
     }
-
-    #About-us img, video {
-        display: none;
-    }
-
 
     #products-list {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .product {
-        width: 20rem;
-        height: 28rem;
+        width: 30rem;
+        height: 36rem;
     }
 
     .product-img {
-        width: 19rem;
-    }
-    
-    .product-description {
-        font-size: 1.2rem;
-        line-height: 2rem;
+        width: 29rem;
     }
 
-    
+    .product p {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
     footer {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
-
 }
